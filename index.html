@@ -1,26 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wizard of Oz Program</title>
     <style>
         html, body {
             height: 100%;
+            width: 100%; /* <--- THIS WAS MISSING AND CAUSED MOBILE ZOOMING */
             margin: 0;
             padding: 0;
             background: #000;
+            overflow: hidden; /* Prevents unwanted scrollbars */
         }
         .pdf-container {
             width: 100%;
             height: 100%;
             border: none;
+            box-sizing: border-box; 
         }
     </style>
 </head>
 <body>
     <iframe class="pdf-container" 
             src="TWT - THE WIZARD OF OZ, YOUTH EDITION PROGRAM.pdf" 
-            title="Wizard of Oz Programr">
+            title="Wizard of Oz Program">
     </iframe>
 </body>
 </html>
